@@ -1,0 +1,19 @@
+pipeline {
+          agent any
+                  stages {
+                          stage('build') {
+                                   steps {
+                                          sh '''
+                                          git clone https://github.com/tashivaa/Tic-Tac-Toe.git
+                                          
+                                          '''
+                                          }
+                                          }
+                          stage('deploy') {
+                                    steps {
+                                          sh '''
+                                          '''
+                                          }
+                                          }
+                         }
+             }
