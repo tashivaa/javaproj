@@ -5,7 +5,8 @@ pipeline {
                                    steps {
                                           sh '''
                                           git clone https://github.com/tashivaa/Tic-Tac-Toe.git
-                                          
+                                          cd /var/lib/jenkins/workspace/pipeline1/Tic-Tac-Toe
+                                          mvn install clean deploy 
                                           '''
                                           }
                                           }
